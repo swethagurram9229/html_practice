@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FreshCart Style Home</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; }
+    header, footer { background: #fff; padding: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    nav ul { display: flex; gap: 1rem; list-style: none; margin:0; padding:0; }
+    .hero { display: flex; align-items:center; justify-content: space-between; background:#f7f7f7; padding:2rem; }
+    .hero h1 { font-size:2rem; }
+    .hero button { background:#28a745; color:#fff; border:none; padding:0.75rem 1.5rem; cursor:pointer; }
+    .categories, .products { padding:2rem; }
+    .categories ul, .products-grid { list-style:none; margin:0; padding:0; display:flex; gap:1rem; flex-wrap:wrap; }
+    .categories li, .product-card { background:#fff; flex:1 1 calc(25% - 1rem); padding:1rem; box-shadow:0 1px 3px rgba(0,0,0,0.1); text-align:center; }
+    .product-card img { width:100%; height:auto; }
+    .product-card .price { font-weight:bold; margin:0.5rem 0; }
+    .product-card button { background:#007bff; color:#fff; border:none; padding:0.5rem 1rem; cursor:pointer; }
+    footer { text-align:center; font-size:0.875rem; color:#555; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Stores</a></li>
+        <li><a href="#">Account</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>SuperMarket For Fresh Grocery</h1>
+      <p>Introducing a new model for online grocery shopping and convenient home delivery at any time.</p>
+      <button>Shop Now</button>
+    </div>
+    <img src="https://via.placeholder.com/400x250" alt="Supermarket Banner">
+  </section>
+
+  <section class="categories">
+    <h2>Shop by Category</h2>
+    <ul>
+      <li>Fruits & Vegetables</li>
+      <li>Dairy, Bread & Eggs</li>
+      <li>Bakery & Biscuits</li>
+      <li>Snack & Munchies</li>
+      <li>Chicken, Meat & Fish</li>
+      <li>Baby Care</li>
+      <li>Cleaning Essentials</li>
+      <li>Tea, Coffee & Drinks</li>
+    </ul>
+  </section>
+
+  <section class="products">
+    <h2>Popular Products</h2>
+    <div class="products-grid">
+      <!-- repeat this product-card block for multiple products -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x200" alt="Product Name">
+        <h3>Onion Flavour Potato</h3>
+        <p class="price">$3 <span style="text-decoration:line-through;color:#999;">$5</span></p>
+        <button>Add to cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x200" alt="Product Name">
+        <h3>Salted Instant Popcorn</h3>
+        <p class="price">$11.70 <span style="text-decoration:line-through;color:#999;">$18</span></p>
+        <button>Add to cart</button>
+      </div>
+      <!-- more cards... -->
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2022 - 2025 FreshCart eCommerce HTML Template. All rights reserved. Powered by Codescandy.</p>
+  </footer>
+
+</body>
+</html>
